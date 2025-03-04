@@ -1,0 +1,1 @@
+# 4.  გადახედეთ დამატებით მასალას: https://www.w3schools.com/python/gloss_python_else.asp
