@@ -1,15 +1,14 @@
-import random
-
 # 5. შექმენით პატარა თამაში, სადაც თქვენ შექმნით რაიმე რიცხვების თანმიმდევრობას,
 # და მომხმარებელმა კი უნდა გამოიცნოს ეს თანმიმდევრობა (გამოიყენეთ While loop)
 
 
-saidumloricxvi = random.randint(1, 10)
-user_number = int(input("შეიყვანე რიცხვი რომელსაც ფიქრობ (1-იდან 10-მდე): "))
+numbers = 5678
+user_numbers = int(input("შეიყვანე 4 რიცხვი რომელსაც ფიქრობ (მიმდევრობა): "))
 
+while user_numbers != numbers:
+    if len(str(user_numbers)) != len(str(numbers)):
+        print("თანმიმდევრობა შედგება 4 რიცხვისგან და არ უნდა აღემატებოდეს მას")
 
-while user_number != saidumloricxvi:
-    user_number = int(input("შენი რიცხვი არასწორია, სცადე თავიდან: "))
+    user_numbers = int(input("თანმიმდევრობა არასწორია თავიდან შეიყვანე: "))
 
-    if user_number == saidumloricxvi:
-        print(f"სწორია!! საიდუმლო რიცხვი არის {saidumloricxvi}")
+print("გილოცავ! შენ სწორად გამოიცანი თანმიმდევრობა <3")
