@@ -1,4 +1,4 @@
 # 2) for ციკლის გამოყენებით გამოიტანეთ რიცხვები 5-დან 25-მდე
 
-for num2 in range(2, 25):
+for num2 in range(5, 25):
     print(num2)
