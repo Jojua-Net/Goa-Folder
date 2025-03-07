@@ -5,13 +5,8 @@
 
 user_num = int(input("შეიყვანე რიცხვი (50-მდე): "))
 
-for i in range(1, 50):
-    if user_num>50:
-        user_num = int(input("არასწორია, შეიყვანე რიცხვი თავიდან (50-მდე): "))
+while 0 > user_num or user_num > 50:
+    user_num = int(input("არასწორია, შეიყვანე რიცხვი თავიდან (50-მდე): "))
 
-    elif user_num<0:
-        user_num = int(input("არასწორია, შეიყვანე რიცხვი თავიდან (50-მდე): "))
-
-    else:
-        for x in range(0, 100, user_num):
-            print(f"{user_num}-ის ჯერადებია {x}")
+for x in range(user_num, 100, user_num):
+    print(f"{user_num}-ის ჯერადებია {x}")
