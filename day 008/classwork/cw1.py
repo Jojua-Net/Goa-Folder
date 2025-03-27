@@ -9,13 +9,13 @@
 
 # დავალება 1
 
-# user_string = input("Enter string: ")
+user_string = input("Enter string: ")
 
-# string_reverse = ""
-# for i in user_string:
-#     string_reverse = i + string_reverse
+string_reverse = ""
+for i in user_string:
+    string_reverse = i + string_reverse
 
-# print(string_reverse)
+print(string_reverse)
 
 
 
