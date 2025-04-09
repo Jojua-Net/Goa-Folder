@@ -1,16 +1,19 @@
 # 4. შექმენით manual_pop ფუნქცია
 
-listn = [1, 2, 3, 4, 5, 6]
+listn = [1, 2, 3, 4, 5, 6, "ვახო", "ზდაროვა", "გელა"] # index = 8 # jami = 9
 
 def manual_pop(l, li):
-    count = 0
-    lindex = l.index(li)
-    for i in l:
-        count += 1
-        if lindex == li:
-            break
+    index = li+1
+    new_listn = []
+    
+    z = 0
         
-    return count 
-
-
-print(manual_pop(listn, 2))
+    for i in listn:
+        z+=1
+        if z != index:
+            new_listn.append(i)
+        
+        
+    return new_listn
+    
+print(manual_pop(listn, 8))
