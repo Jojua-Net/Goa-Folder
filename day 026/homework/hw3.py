@@ -14,7 +14,7 @@ def dt(x):
         if isinstance(i, str):
             str1 += 1
         elif isinstance(i, bool):
-            bool1 += 1
+            bool1 += 1 
         elif isinstance(i, int):
             int1 += 1
         else:
