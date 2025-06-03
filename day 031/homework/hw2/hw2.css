@@ -1,0 +1,9 @@
+
+
+nav>a {
+    color: orange;
+}
+
+nav>a:visited {
+    color: red;
+}
