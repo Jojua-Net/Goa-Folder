@@ -1,0 +1,554 @@
+@import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+:root {
+    --primary-color: #bf0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'FiraGO', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    background-image: linear-gradient(rgba(201, 201, 201, 0.5) 1px, transparent 1px), linear-gradient(to right, rgba(201, 201, 201, 0.5) 1px, #f4f4f4 1px);
+    background-size: 80px 80px;
+    background-color: #f4f4f4;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+body.dark {
+    color: #fff;
+    background-image: linear-gradient(rgba(201, 201, 201, 0.2) 1px, transparent 1px), linear-gradient(to right, rgba(201, 201, 201, 0.2) 1px, #141414 1px);
+    background-color: #141414;
+}
+
+.container {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 90%;
+}
+
+
+
+
+
+
+/* ========== / HEADER CSS | JOJUA.NET / ========== */
+header.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    /* border: 1px solid  rgba(201, 201, 201, 0.5); */
+    box-shadow: 0px 0px 5px #00000050;
+    z-index: 99;
+}
+
+body.dark>header.header {
+    background-color: #111111;
+}
+
+header.header>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.header>.container>.logo-header {
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body.dark>header.header>.container>.logo-header {
+    color: #fff;
+}
+
+header.header>.container>.logo-header>span {
+    color: var(--primary-color);
+}
+
+header.header>.container>nav>ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header.header>.container>nav>ul>li>a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    padding-left: 15px;
+    transition: all 0.2s ease-in;
+}
+
+body.dark>header.header>.container>nav>ul>li>a {
+    color: #fff;
+}
+
+header.header>.container>nav>ul>li>a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transition: all 0.2s ease-in;
+}
+
+header.header>.container>nav>ul>li>a:hover {
+    color: var(--primary-color);
+}
+
+body.dark>header.header>.container>nav>ul>li>a:hover {
+    color: var(--primary-color);
+}
+
+header.header>.container>nav>ul>li>a:hover::before {
+    box-shadow: 0px 0px 3px var(--primary-color);
+}
+
+header.header>.container>#header-btn {
+    display: none;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 758px) {
+    header.header>.container>#header-btn {
+        display: block;
+        overflow: hidden;
+        color: #fff;
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+    }
+
+    header.header>.container>nav>ul {
+        position: absolute;
+        display: none;
+        overflow: none;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        flex-direction: column;
+        background-color: #ffffff;
+        align-items: center;
+    }
+
+    body.dark>header.header>.container>nav>ul {
+        background-color: #111111;
+    }
+
+    header.header>.container>nav.open>ul {
+        display: flex;
+        overflow: unset;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== / SECTION & CARDS CSS | JOJUA.NET / ========== */
+section.section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+
+section.section>.container>.section-header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section.section>.container>.section-header>.section-title {
+    display: flex;
+    flex-direction: column;
+}
+
+section.section>.container>.section-header>.section-title>span {
+    color: #000;
+    font-size: 14px;
+}
+
+section.section>.container>.section-header>.section-title>span>span {
+    color: var(--primary-color);
+}
+
+section.section>.container>.section-header>.section-title>h1 {
+    color: #000;
+}
+
+section.section>.container>.section-header>.section-title>h1>span {
+    color: var(--primary-color);
+}
+
+body.dark>section.section>.container>.section-header>.section-title>span {
+    color: #fff;
+}
+
+body.dark>section.section>.container>.section-header>.section-title>h1 {
+    color: #fff;
+}
+
+
+
+section.section>.container>.section-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+section.section>.container>#myprojects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+section.section>.container>#myprojects>.project-card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px #00000050;
+    border: 2px solid var(--primary-color);
+}
+
+body.dark>section.section>.container>#myprojects>.project-card {
+    background-color: #282828;
+}
+
+
+section.section>.container>#myprojects>.project-card>.project-card-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+
+section.section>.container>#myprojects>.project-card>.project-card-img>img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+section.section>.container>#myprojects>.project-card>.project-card-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+section.section>.container>#myprojects>.project-card>.project-card-content>.br-custom {
+    position: relative;
+    margin: 10px 0px;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid rgba(201, 201, 201, 0.5);
+}
+
+
+section.section>.container>#myprojects>.project-card>.project-card-content>span {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+section.section>.container>#myprojects>.project-card>.project-card-content>p {
+    font-size: 12px;
+    color: #444;
+}
+
+body.dark>section.section>.container>#myprojects>.project-card>.project-card-content>p {
+    color: #ccc;
+}
+
+section.section>.container>#services {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+section.section>.container>#services>.service-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px #00000050;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+body.dark>section.section>.container>#services>.service-card {
+    background-color: #282828;
+}
+
+section.section>.container>#services>.service-card>.service-card-icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+section.section>.container>#services>.service-card>.service-card-icon>i {
+    font-size: 25px;
+    transition: all 0.2s ease-in;
+}
+
+section.section>.container>#services>.service-card>.service-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section.section>.container>#services>.service-card>.service-card-content>span {
+    display: block;
+    width: 80%;
+    font-size: 18px;
+    color: #000;
+}
+
+body.dark>section.section>.container>#services>.service-card>.service-card-content>span {
+    color: #fff;
+}
+
+
+section.section>.container>#services>.service-card:hover>.service-card-content>span {
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+
+section.section>.container>#services>.service-card:hover>.service-card-content>p {
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+
+section.section>.container>#services>.service-card:hover>.service-card-icon {
+    border-color: #ffffff
+}
+
+section.section>.container>#services>.service-card:hover>.service-card-icon>i {
+    color: #fff;
+}
+
+section.section>.container>#services>.service-card:hover {
+    background-color: var(--primary-color);
+}
+
+body.dark>section.section>.container>#services>.service-card:hover {
+    background-color: var(--primary-color);
+}
+
+section.section>.container>#experience {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+}
+
+section.section>.container>#experience>.skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+section.section>.container>#experience>.skills>.skill-div {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+section.section>.container>#experience>.skills>.skill-div>.skill-name {
+    color: #000;
+}
+
+section.section>.container>#experience>.skills>.skill-div>.skill-progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+}
+
+section.section>.container>#experience>.skills>.skill-div>.skill-progress[value]::-webkit-progress-bar {
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: inset 0px 2px 5px #00000036;
+}
+
+section.section>.container>#experience>.skills>.skill-div>.skill-progress[value]::-webkit-progress-value {
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    background: repeating-linear-gradient(-45deg, #fff, #fff 2px, var(--primary-color) 2px, var(--primary-color) 25px);
+}
+
+
+section.section>.container>#experience>.profile-img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    padding: 5px;
+    box-shadow: 5px 10px 30px var(--primary-color);
+}
+
+section.section>.container>#experience>.profile-img>img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+
+
+
+
+
+
+/* ========== / DARK & LIGHT SWITCHER CSS | JOJUA.NET / ========== */
+.dark-light {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.dark-light>#dl-switch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #0000008f;
+    cursor: pointer;
+}
+
+.dark-light>#dl-switch>i {
+    font-size: 16px;
+}
+
+
+body.dark>.dark-light>#dl-switch {
+    background-color: #111;
+}
+
+
+body.dark>.dark-light>#dl-switch>i {
+    color: #fff;
+}
+
+
+
+
+
+
+/* ========== / WEBKIT SCROLLBAR & SELECTION CSS | JOJUA.NET / ========== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
+
+body.dark::-webkit-scrollbar-track {
+    background-color: #111111;
+}
+
+::selection {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+
+
+
+
+
+/* ========== / FONTS CSS | JOJUA.NET / ========== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+button,
+label,
+.btn {
+    font-family: 'FiraGO', sans-serif;
+    font-weight: bold;
+    font-feature-settings: "case" on;
+}
+
+p,
+input {
+    font-family: 'FiraGO', sans-serif;
+    font-weight: normal;
+}

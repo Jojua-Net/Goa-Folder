@@ -1,0 +1,32 @@
+
+[
+    {
+        "title": "ვებ გვერდების დამზადება",
+        "icon": "fa-solid fa-laptop-code",
+        "content": "სერვისი 1"
+    },
+
+    {
+        "title": "ლოგოს დამზადება",
+        "icon": "fa solid fa-laptop-code",
+        "content": "სერვისი 2"
+    },
+
+    {
+        "title": "გასაყიდი დიზაინები",
+        "icon": "fa-solid fa-laptop-code",
+        "content": "სერვისი 3"
+    },
+
+    {
+        "title": "RESPONSIVE დიზაინი",
+        "icon": "fa-solid fa-laptop-code",
+        "content": "სერვისი 4"
+    },
+
+    {
+        "title": "მართვის პანელი",
+        "icon": "fa-solid fa-laptop-code",
+        "content": "სერვისი 5"
+    }
+]

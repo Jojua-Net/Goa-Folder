@@ -1,0 +1,37 @@
+[
+    {
+        "title": "otaku.ge - ანიმეები ქართულად",
+        "image": "images/project1.png",
+        "content": "ეს არის პირველი სიახელი"
+    },
+
+    {
+        "title": "kinoebi.in - ფილმები და სერიალები ქართულად",
+        "image": "images/project2.png",
+        "content": "ეს არის მეორე სიახელი"
+    },
+
+    {
+        "title": "geoserv.ge - შექმენი საუკეთესო",
+        "image": "images/project3.png",
+        "content": "ეს არის მესამე სიახელი"
+    },
+
+    {
+        "title": "slotebi.xyz - უფასო სლოტები",
+        "image": "images/project4.png",
+        "content": "ეს არის მეოთხე სიახელი"
+    },
+
+    {
+        "title": "anima.com.ge - ანიმეები და ანიმაციები ქართულად",
+        "image": "images/project5.jpg",
+        "content": "ეს არის მეხუთე სიახელი"
+    },
+
+    {
+        "title": "qartulad.cc - ფილმები და სერიალები ქართულად",
+        "image": "images/project6.jpg",
+        "content": "ეს არის მექვსე სიახელი"
+    }
+]
