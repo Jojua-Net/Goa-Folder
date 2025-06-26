@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    color: #000;
+    background-color: #f4f4f4;
+}
+
+
+
+
+
+
+
+.box {
+    margin: 150px auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 50%;
+    font-weight: bold;
+}
