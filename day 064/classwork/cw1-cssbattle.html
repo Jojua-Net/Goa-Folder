@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="lines-cont">
+
+        <div class="lines">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+        <div class="lines">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </div>
+
+
+    <style>
+        body {
+            background-color: #E25C57;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .lines-cont {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .lines-cont>.lines {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+
+        .lines-cont>.lines:nth-child(1) {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .lines-cont>.lines:nth-child(2) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .lines-cont>.lines>div {
+            width: 200px;
+            height: 30px;
+            background-color: #F4DA64;
+        }
+    </style>
+
+</body>
+
+</html>

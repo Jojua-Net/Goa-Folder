@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div class="box-cont">
+
+        <div class="box">
+            <div class="box-in">
+                <div class="box-in-in">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #CA8E75;
+        }
+
+        .box-cont {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .box {
+            position: relative;
+            width: 220px;
+            height: 200px;
+            background: #FEFF58;
+            transform: rotate(15deg)
+        }
+
+        .box-in {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            top: 40px;
+            left: -60px;
+            width: 340px;
+            height: 120px;
+            background: #414B81;
+            transform: rotate(-30deg)
+        }
+
+        .box-in-in {
+            position: relative;
+            width: 60px;
+            height: 80px;
+            background: #FEFF58;
+            transform: rotate(-60deg)
+        }
+    </style>
+
+
+</body>
+
+</html>
