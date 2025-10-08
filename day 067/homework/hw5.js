@@ -8,8 +8,12 @@ const car = {
     year: 2025,
 }
 
-for (let i = 0; i < car.length; i++) {
-    
-}
 
-console.log(car)
+// პირველი გზა
+console.log("keys: ", Object.keys(car))
+console.log("values: ", Object.values(car))
+
+// მეორე გზა
+for (const [key, value] of Object.entries(car)) {
+    console.log(key, ":", value)
+}
